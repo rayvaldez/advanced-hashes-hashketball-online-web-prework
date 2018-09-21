@@ -153,4 +153,3 @@ def shoe_size(shoe)
   end
   size
 end
-
