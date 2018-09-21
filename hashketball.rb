@@ -190,7 +190,8 @@ def player_stats(player_name)
   player_stats = {}
   game_hash.each do |team, values|
     values[:players].each do |stats|
-      if stats[:player].to_i == player_name.to_i
+      if stats[:player] == player_name
+        binding.pry
         stats.delete(:player)
         player_stats = stats
       end
