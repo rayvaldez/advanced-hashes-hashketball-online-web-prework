@@ -161,4 +161,5 @@ def team_colors(team_name)
       colors = stat[:colors].flatten
     end
   end
+  colors
 end
