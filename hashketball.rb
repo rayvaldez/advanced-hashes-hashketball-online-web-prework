@@ -194,8 +194,8 @@ def player_stats(player_name)
         binding.pry
         stats.delete(:player)
         binding.pry
-        player_stats = stats
-      end
+        stats << player_stats
+        end
     end
   end
   player_stats
