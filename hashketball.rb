@@ -192,7 +192,7 @@ def player_stats(player_name)
     values[:players].each do |stats|
       if stats[:player] == player_name
         stats.delete(:player)
-        player_stats = stats
+        player_stats.to_i = stats
         binding.pry
       end
     end
