@@ -127,3 +127,16 @@ def game_hash
 }
 
 end
+
+def num_points_scored(player)
+  points = nil
+  game_hash.each do |team, stats|
+    stat_array = stats[:players]
+    stat_array.each do |player_hash|
+      if player_hash[:player] == player
+        points = player_hash[:points]
+      end
+    end
+  end
+  points
+end
