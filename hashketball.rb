@@ -160,4 +160,5 @@ def team_colors(team_name)
     if stat[:team_name] == team_name
       colors = stat[:colors].flatten
     end
+  end
 end
