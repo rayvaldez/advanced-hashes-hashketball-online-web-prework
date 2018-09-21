@@ -159,4 +159,5 @@ def team_colors(team_name)
   game_hash.each do |team, stat|
     if stat[:team_name] == team_name
       colors = stat[:colors].flatten
+    end
 end
