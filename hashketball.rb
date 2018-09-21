@@ -193,7 +193,6 @@ def player_stats(player_name)
       if stats[:player] == player_name
         stats.delete(:player)
         stats = player_stats.to_i
-        binding.pry
       end
     end
   end
