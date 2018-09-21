@@ -134,7 +134,7 @@ def num_points_scored(player)
     stat_array = stats[:players]
     stat_array.each do |player_hash|
       if player_hash[:player] == player
-        points = player_hash[:points]
+        points = player_hash[:points].to_i
       end
     end
   end
