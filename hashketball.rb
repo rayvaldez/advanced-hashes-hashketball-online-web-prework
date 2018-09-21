@@ -63,6 +63,7 @@ def game_hash
           }
         ]
     },
+    binding.pry
     :away => {
       :team_name => "Charlotte Hornets",
       :colors => ("Turquoise", "Purple"),
