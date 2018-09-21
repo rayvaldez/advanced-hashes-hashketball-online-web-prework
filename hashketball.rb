@@ -193,7 +193,7 @@ def player_stats(player_name)
 
       if stats[:player] == player_name
         stats.delete(:player)
-        player_stats = stats
+        player_stats = stats.to_i
       end
     end
   end
